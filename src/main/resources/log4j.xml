@@ -32,49 +32,6 @@
 		<level value="info" />
 	</logger>
 
-	
-	<!-- 
-	# log4jdbc settings development production
-	jdbc.connection     :     WARN       WARN
-	jdbc.audit          :     WARN       WARN
-	jdbc.sqlonly        :     WARN       WARN
-	jdbc.sqltiming      :     INFO       WARN
-	jdbc.resultset      :     WARN       WARN
-	jdbc.resultsettable :     INFO       WARN
-	-->
-	
-	<logger name="jdbc.connection" additivity="false">
-	<level value="WARN"/>
-	<appender-ref ref="console"/>
-	</logger>
-	
-	<logger name="jdbc.audit" additivity="false">
-	<level value="WARN"/>
-	<appender-ref ref="console"/>
-	</logger>
-	
-	<logger name="jdbc.sqlonly" additivity="false">
-	<level value="WARN"/>
-	<appender-ref ref="console"/>
-	</logger>
-	
-	<logger name="jdbc.sqltiming" additivity="false">
-	<level value="INFO"/>
-	<appender-ref ref="console"/>
-	</logger>
-	
-	<logger name="jdbc.resultset" additivity="false">
-	<level value="WARN"/>
-	<appender-ref ref="console"/>
-	</logger>
-	
-	<logger name="jdbc.resultsettable" additivity="false">
-	<level value="INFO"/>
-	<appender-ref ref="console"/>
-	</logger>
-
-
-
 	<!-- Root Logger -->
 	<root>
 		<priority value="warn" />

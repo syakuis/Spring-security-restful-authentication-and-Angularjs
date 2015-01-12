@@ -6,7 +6,9 @@
 	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath*:security-context.xml</param-value>
+		<param-value>
+		classpath*:com/syaku/config/security-context.xml
+		</param-value>
 	</context-param>
 	
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
@@ -30,7 +32,8 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-<!-- utf-8 filter -->
+
+	<!-- utf-8 filter -->
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -55,5 +58,6 @@
 	<filter-name>springSecurityFilterChain</filter-name>
 	<url-pattern>/*</url-pattern>
 	</filter-mapping>
+
 
 </web-app>

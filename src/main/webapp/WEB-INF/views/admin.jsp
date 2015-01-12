@@ -9,6 +9,6 @@
 	Hello world!  
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<P>  관리자라나어ㅣㅓㅂ쟈덥쟈ㅐ. </P>
 </body>
 </html>

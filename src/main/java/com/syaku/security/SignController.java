@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class SignController {
-	private static final Logger logger = LoggerFactory.getLogger(SignController.class);
+	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	@RequestMapping(value="/signin", method = RequestMethod.GET)
 	public String signin(@RequestParam(value="error", required=false) String error, Model model, HttpServletRequest request) {
@@ -30,6 +30,7 @@ public class SignController {
 		return "signin";
 	}
 	
+	@PreAuthorize("authenticated")
 	@RequestMapping(value="/mypage", method = RequestMethod.GET)
 	public String mypage(Model model) {
 		
